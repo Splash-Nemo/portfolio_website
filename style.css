@@ -1,0 +1,400 @@
+:root {
+    --main-margin-top: 75px;
+  }
+
+* {
+    /* box-sizing: border-box; */
+    margin: 0;
+    color: aliceblue;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    /* background-color: #14131A; */
+    /* border: 2px solid red; */
+    width: 100vw;
+    overflow-x: hidden;
+    padding-top: 30px;
+}
+
+/* Main */
+#main{
+    display: flex;
+    /* padding: 0 10px; */
+    /* justify-content: space-between; */
+}
+
+#left-side{
+    /* background-color: #282632; */
+    width: 50%;
+    margin-right: 40px;
+    /* padding-top: 40px; */
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+#right-side{
+    padding-right: 30px;
+}
+
+/* NavBar */
+#nav-a{
+    
+    font-size: medium;
+    width: 100%;
+    text-align: left;
+}
+
+#cert-drop{
+    font-size: medium;
+    padding: 7px;
+    background-color: #141619;
+}
+#cert-drop a{
+    color: aliceblue;
+    margin: 5px;
+}
+#cert-drop a:hover{
+    background-color: #282632;
+    color: aliceblue;
+}
+
+#social-drop{
+    font-size: medium;
+    padding: 12px;
+    background-color: #141619;
+}
+#social-drop a{
+    padding: 5px;
+    color: aliceblue;
+}
+#social-drop a:hover{
+    background-color: #282632;
+    color: aliceblue;
+}
+
+#nav-a a{
+    color: aliceblue;
+    transition: all 200ms ease-in-out;
+}
+
+#nav-a a:hover{
+    color: aliceblue;
+    scale: 1.1;
+}
+
+#ongoing-pro{
+    width: 100%;
+    /* border: 2px solid red; */
+    font-size: medium;
+    margin-top: var(--main-margin-top);
+}
+
+#ongoing-pro ul{
+    /* background-color: #212529; */
+    /* background-color: #282632; */
+    border-radius: 0;
+    /* border: 2px solid red; */
+}
+
+#ongoing-pro ul li{
+    /* background-color: #282632; */
+    background-color: #212529;
+    font-size: small;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid white;
+    color: aliceblue;
+    /* border: 2px solid red; */
+}
+
+#ongoing-pro ul li:hover{
+    border-bottom: 2px solid white;
+}
+
+/* Home */
+#profile-pic{
+    margin-bottom: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+#profile-pic:hover{
+    scale: 1.1;
+}
+#cover{
+    filter: blur(10px);
+}
+
+#content h5, #content h6{
+    font-weight: 700;
+    color: #efcea9;
+}
+
+#content p{
+    font-weight: 600;
+}
+
+
+/* About-Me */
+
+#about {
+    width: 100%;
+    min-height: 800px;
+    /* border: 2px solid red; */
+    /* background-color: #101929; */
+    margin: 100px 0;
+    margin-bottom: 0;
+    padding: 0 30px;    
+    overflow: hidden;
+}
+
+#more-about {
+    margin-top: 10px;
+    padding: 0 40px;
+    display: flex;
+    gap: 10%;
+}
+
+#me,
+#cert {
+    padding: 20px;
+    width: 50%;
+}
+
+#more-about h4 {
+    font-size: 2.2rem;
+}
+
+#more-about p,
+#cert ul {
+    color: rgb(184, 178, 178);
+    font-size: 2rem;
+}
+
+#me {
+    display: flex;
+    gap: 3rem;
+}
+
+#more-about p span {
+    color: ghostwhite;
+}
+
+#me p {
+    word-spacing: 4px;
+}
+
+#cert {
+    display: flex;
+    gap: 3rem;
+}
+
+#me h4,
+#cert h4 {
+    white-space: nowrap;
+}
+
+#cert ul {
+    margin-top: 50px;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#cert li {
+    margin-bottom: 6px;
+}
+
+#cert li a {
+    padding-left: 0;
+    margin-left: 0;
+    transition: .4s;
+    font-size: 1.8rem;
+    color: aliceblue;
+}
+
+#cert a:hover {
+    color: rgb(254, 145, 145);
+}
+
+.top-left-border {
+    width: 100px;
+    border-top: 10px solid aliceblue;
+    border-left: 10px solid aliceblue;
+    height: 100px;
+}
+
+.bottom-right-border {
+    width: 100px;
+    height: 100px;
+    border-bottom: 10px solid aliceblue;
+    border-right: 10px solid aliceblue;
+    position: absolute;
+    right: 30px;
+    top: 600px;
+    /* bottom: 0; */
+}
+
+
+
+/* projects */
+#projects{
+    margin-top: 69px;
+}
+
+#project-list{
+    margin-top: 5px;
+}
+
+#project-list .col{
+    /* border: 2px solid red; */
+    transition: all 500ms ease-in-out;
+    width: 30%;
+}
+
+#project-list .col:hover{
+    scale: 1.04;
+    margin: 15px;
+}
+
+#project-list .card-body{
+    background-color: #212529;
+}
+
+#project-list .sos{
+    color: aliceblue;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#project-list .card{
+    border: 1px solid rgb(41, 39, 39);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 200px rgb(67, 66, 66);
+    background-color: #212529;
+}
+#project-list .lbw{
+    background-color: #212529;
+    font-style: italic;
+    font-size: 1.3rem;
+    border-radius: 0px 0px 10px 10px;
+}
+
+/* Skills */
+#skills{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+
+
+#skills-list{
+    margin-top: 10px;
+    padding-right: 10px;
+    display: flex;
+}
+
+.caption{
+    margin-top: 6px;
+    margin-bottom: 11px;
+    font-size: 2rem;
+}
+
+#skills-list div{
+    width: 35%;
+}
+
+#skills-list .sl, #soft-skills .sl{
+    margin-top: 10px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+#skills-list .sl li, #soft-skills .sl li{
+    color: aliceblue;
+    background-color: #73787F;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 5px;
+    font-size: larger;
+    margin-bottom: 11px;
+}
+
+#skills-list .sl li:hover, #soft-skills .sl li:hover{
+    color: aliceblue;
+    border-bottom: 2px solid white;
+}
+
+#ss-resume{
+    margin-top: 35px;
+}
+
+
+/* Contact Section */
+
+#contact-me {
+    width: 100%;
+    padding: 30px;
+    /* background-color: #191919; */
+    text-align: left;
+    font-size: 2rem;
+}
+
+#contact-me p {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+#contact-me ul {
+    display: flex;
+    padding-left: 0;
+    /* justify-content: center; */
+    gap: 1rem;
+}
+
+#contact-me ul span li a i:hover{
+    color: rgb(254, 145, 145);
+}
+@media screen and (max-width:900px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+    #about {
+        background-color: #131F33;
+    }
+    #more-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #more-about h4,
+    #more-about p {
+        font-size: 2rem;
+    }
+    #me,
+    #cert {
+        display: flex;
+        flex-direction: column;
+    }
+    .box {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
