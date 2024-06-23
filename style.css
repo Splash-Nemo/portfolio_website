@@ -1,14 +1,16 @@
+/* Common styles for all screen sizes */
 :root {
     --main-margin-top: 75px;
-  }
+}
 
 * {
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     margin: 0;
     color: aliceblue;
     padding: 0;
     text-decoration: none;
     list-style: none;
+    user-select: none;
 }
 
 html {
@@ -17,95 +19,88 @@ html {
 }
 
 body {
-    /* background-color: #14131A; */
-    /* border: 2px solid red; */
     width: 100vw;
     overflow-x: hidden;
     padding-top: 30px;
+    background-color: #14131A; /* Adjust as per your design */
 }
 
 /* Main */
-#main{
+#main {
     display: flex;
-    /* padding: 0 10px; */
-    /* justify-content: space-between; */
 }
 
-#left-side{
-    /* background-color: #282632; */
+#left-side {
     width: 50%;
     margin-right: 40px;
-    /* padding-top: 40px; */
     padding-left: 30px;
     padding-right: 40px;
 }
 
-#right-side{
+#right-side {
     padding-right: 30px;
 }
 
 /* NavBar */
-#nav-a{
-    
+#nav-a {
     font-size: medium;
     width: 100%;
     text-align: left;
 }
 
-#cert-drop{
+#cert-drop {
     font-size: medium;
     padding: 7px;
     background-color: #141619;
 }
-#cert-drop a{
+
+#cert-drop a {
     color: aliceblue;
     margin: 5px;
 }
-#cert-drop a:hover{
+
+#cert-drop a:hover {
     background-color: #282632;
     color: aliceblue;
 }
 
-#social-drop{
+#social-drop {
     font-size: medium;
     padding: 12px;
     background-color: #141619;
 }
-#social-drop a{
+
+#social-drop a {
     padding: 5px;
     color: aliceblue;
 }
-#social-drop a:hover{
+
+#social-drop a:hover {
     background-color: #282632;
     color: aliceblue;
 }
 
-#nav-a a{
+#nav-a a {
     color: aliceblue;
     transition: all 200ms ease-in-out;
 }
 
-#nav-a a:hover{
+#nav-a a:hover {
     color: aliceblue;
     scale: 1.1;
 }
 
-#ongoing-pro{
+#ongoing-pro {
     width: 100%;
-    /* border: 2px solid red; */
     font-size: medium;
     margin-top: var(--main-margin-top);
 }
 
-#ongoing-pro ul{
-    /* background-color: #212529; */
-    /* background-color: #282632; */
+#ongoing-pro ul {
     border-radius: 0;
-    /* border: 2px solid red; */
 }
 
-#ongoing-pro ul li{
-    /* background-color: #282632; */
+#ongoing-pro ul li {
     background-color: #212529;
     font-size: small;
     margin-top: 10px;
@@ -114,46 +109,52 @@ body {
     border: none;
     border-bottom: 1px solid white;
     color: aliceblue;
-    /* border: 2px solid red; */
 }
 
-#ongoing-pro ul li:hover{
+#ongoing-pro ul li:hover {
     border-bottom: 2px solid white;
 }
 
 /* Home */
-#profile-pic{
+#profile{
+    margin: 0 auto 15px;
+    width: 100px;
+    cursor: pointer;
+    height: 100px;
+}
+#profile-pic {
     margin-bottom: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: all 0.5s ease-in-out;
 }
 
-#profile-pic:hover{
+#profile-pic:hover {
     scale: 1.1;
 }
-#cover{
+
+#cover {
     filter: blur(10px);
 }
 
-#content h5, #content h6{
+#content h5,
+#content h6 {
     font-weight: 700;
     color: #efcea9;
 }
 
-#content p{
+#content p {
     font-weight: 600;
 }
 
-
 /* About-Me */
-
 #about {
     width: 100%;
-    min-height: 800px;
-    /* border: 2px solid red; */
-    /* background-color: #101929; */
-    margin: 100px 0;
+    min-height: 500px;
+    margin-top: 30px;
     margin-bottom: 0;
-    padding: 0 30px;    
+    padding: 0 30px;
     overflow: hidden;
 }
 
@@ -240,49 +241,52 @@ body {
     position: absolute;
     right: 30px;
     top: 600px;
-    /* bottom: 0; */
 }
-
-
 
 /* projects */
-#projects{
+#projects {
     margin-top: 69px;
+    font-size: medium;
+    height: 380px;
 }
 
-#project-list{
+#project-list {
     margin-top: 5px;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-#project-list .col{
-    /* border: 2px solid red; */
+#project-list .col {
+    width: calc(33.33% - 20px);
     transition: all 500ms ease-in-out;
-    width: 30%;
+    margin-bottom: 20px;
 }
 
-#project-list .col:hover{
-    scale: 1.04;
-    margin: 15px;
+#project-list .col:hover {
+    transform: scale(1.04);
 }
 
-#project-list .card-body{
+#project-list .card-body {
     background-color: #212529;
 }
 
-#project-list .sos{
+#project-list .sos {
     color: aliceblue;
     margin-top: 5px;
     margin-bottom: 20px;
     font-weight: 600;
 }
 
-#project-list .card{
+#project-list .card {
     border: 1px solid rgb(41, 39, 39);
     border-radius: 0px 0px 10px 10px;
     box-shadow: 0px 0px 200px rgb(67, 66, 66);
     background-color: #212529;
 }
-#project-list .lbw{
+
+#project-list .lbw {
     background-color: #212529;
     font-style: italic;
     font-size: 1.3rem;
@@ -290,38 +294,40 @@ body {
 }
 
 /* Skills */
-#skills{
+#skills {
     margin-top: 10px;
     margin-bottom: 50px;
     padding-left: 30px;
     padding-right: 10px;
 }
 
-
-
-#skills-list{
+#skills-list {
     margin-top: 10px;
     padding-right: 10px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.caption{
+.caption {
     margin-top: 6px;
     margin-bottom: 11px;
     font-size: 2rem;
 }
 
-#skills-list div{
-    width: 35%;
+#skills-list div {
+    width: calc(33.33% - 20px);
 }
 
-#skills-list .sl, #soft-skills .sl{
+#skills-list .sl,
+#soft-skills .sl {
     margin-top: 10px;
-    margin-right: 20px;
     border-radius: 10px;
+    width: 100%;
 }
 
-#skills-list .sl li, #soft-skills .sl li{
+#skills-list .sl li,
+#soft-skills .sl li {
     color: aliceblue;
     background-color: #73787F;
     text-align: left;
@@ -332,157 +338,156 @@ body {
     margin-bottom: 11px;
 }
 
-#skills-list .sl li:hover, #soft-skills .sl li:hover{
+#skills-list .sl li:hover,
+#soft-skills .sl li:hover {
     color: aliceblue;
     border-bottom: 2px solid white;
 }
 
-#ss-resume{
+#ss-resume {
     margin-top: 35px;
 }
 
-
 /* Contact Section */
-
 #contact-me {
     width: 100%;
     padding: 30px;
-    /* background-color: #191919; */
     text-align: left;
     font-size: 2rem;
 }
 
 #contact-me p {
-    font-size: 3rem;
-    font-weight: bold;
+    /* font-size: 3rem; */
+    /* font-weight: bold; */
     margin-bottom: 25px;
 }
 
 #contact-me ul {
     display: flex;
     padding-left: 0;
-    /* justify-content: center; */
-    gap: 1rem;
+    gap: 4rem;
 }
 
-#contact-me ul span li a i:hover{
+#contact-me ul li a i:hover {
     color: rgb(254, 145, 145);
 }
 
-@media screen and (max-width:900px) {
+#me button a {
+    text-decoration: none;
+    color: aliceblue;
+}
 
-    body {
-        padding: 20px;
-    }
-    #home{
-        display: none;
-    }
+#me button a:hover {
+    color: rgb(254, 145, 145);
+}
 
-    .container {
-        display: flex;
-        flex-direction: column;
-        row-gap: 3rem;
+.navbar-toggler {
+    color: white;
+    background-color: aliceblue;
+    border: 1px solid aliceblue;
+}
+
+#about header h3 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#me button {
+    border: none;
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 0;
+    background-color: #212529;
+}
+
+a{
+    text-decoration: none !important;
+    color: aliceblue !important;
+}
+
+a:hover{
+    color: rgb(254, 145, 145) !important;
+}
+
+@media screen and (max-width: 1200px) {
+    #left-side {
+        width: 100%;
+        margin-right: 0;
+        padding: 0 20px;
     }
     
-    .top-left-border, .bottom-right-border{
-        display: none;
+    #right-side {
+        display: block;
+        width: 100%;
+        padding: 0 20px;
+        margin-top: 20px; /* Adjust margin as needed */
     }
 
-    #about{
+    #main {
+        flex-direction: column;
+    }
+
+    #about {
         margin-top: 100px;
         margin-bottom: 100px;
-        font-size: medium;
-    }
-
-    #more-about {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center;
-        align-items: center; */
-    }
-    #more-about h4,
-    #more-about p {
-        font-size: 2rem;
-    }
-    #me,
-    #cert {
-        display: flex;
-        flex-direction: column;
-    }
-    .box {
-        display: flex;
-        flex-direction: column;
     }
 }
 
-
-/* Default styles for larger screens */
-
-/* Add styles here for larger screens */
-
-@media (max-width: 991.98px) {
-    /* Styles for medium-sized screens (e.g., tablets) */
-  
-    #main {
-      flex-direction: column-reverse;
-    }
-  
+@media screen and (max-width: 900px) {
     #left-side {
-      width: 100%;
-      margin-right: 0;
-      padding-left: 20px;
-      padding-right: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
-  
-    #right-side {
-      padding-right: 20px;
-    }
-  
-    #ongoing-pro {
-      margin-top: 20px;
-    }
-  }
-  
-  @media (max-width: 767.98px) {
-    /* Styles for smaller screens (e.g., phones) */
-  
-    #left-side {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  
-    #right-side {
-      padding-right: 10px;
-    }
-  
-    #nav-a {
-      font-size: small;
-    }
-  
-    #ongoing-pro h3 {
-      font-size: medium;
-    }
-  
+
     #project-list .col {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  
-    #project-list .lbw {
-      font-size: 1rem;
-    }
-    
-    #skills-list{
-        display: flex;
-        flex-wrap: wrap;
+        width: calc(50% - 20px);
     }
 
-    #skills-list div {
-      width: 100%;
+    #about {
+        font-size: small;
     }
-  
-    #ss-resume {
-      margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    #main {
+        margin-bottom: 10px;
     }
-  }
-  
+
+    #about {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    #left-side {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #project-list .col {
+        width: 100%;
+    }
+
+    #me,
+    #cert {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #about {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    #left-side {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #right-side {
+        padding: 0 10px;
+        margin-top: 20px; /* Adjust margin as needed */
+    }
+}
